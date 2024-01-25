@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1550px) {
+    html{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:500px){
+    html{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .nav .hamburger{
+        display: flex;
+    }
+
+    .nav ul{
+        width: 100vw;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: linear-gradient(90deg, #adffd792 ,  #fff2b19f);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 7vh;
+        display: none;
+    }
+
+    .nav ul li a{
+        font-size: 1.2rem;
+        font-weight:600;
+    }
+
+   
+}

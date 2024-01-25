@@ -1,0 +1,109 @@
+
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 93vh;
+    padding: 1rem;
+}
+
+main .input label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+/* main:discription */
+
+main .discription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .discription h1{
+    font-size: 4rem;
+    color: var(--color2);
+    text-align: center;
+}
+
+main .discription p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* main:input */
+
+main .input input{
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+main .input{
+    text-align: center;
+}
+
+main .input select{
+    height: 2rem;
+    font-size: 1.2rem;  
+}
+
+/* main:button */
+
+main button{
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background-color: var(--color1);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* main:result */
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main #result{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--color1);
+}
+
+
+@media screen  and (max-width:500px){
+    html{
+        font-size: 75%;
+    }
+
+    main .input input{
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    main .input select{
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    main .input #activityLevel{
+        width: 20rem;
+        height: 2.5rem;
+    }
+}
+
+
+

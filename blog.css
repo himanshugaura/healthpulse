@@ -1,0 +1,73 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    font-size: 2.5rem;
+    color: var(--color2);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+main .blogs{
+    width: 80vw;
+    height: 25vh;
+    border: 2px solid gray;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: white;
+}
+
+main .blogs .topic{
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+main .blogs .content{
+    font-size: 1.5rem;
+    word-spacing: 0.8rem;
+
+}
+
+main .buttons{
+    width: 80vw;
+    margin-bottom: 5rem;
+}
+
+main .buttons .read-more , .read-less{
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main .buttons .read-more{
+    background-color: var(--color1);
+}
+
+main .buttons .read-less{
+    background-color: var(--color2);
+    margin-left: 2rem;
+}
+
+
+@media screen and (max-width:500px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    main .blogs{
+        width: 95vw;
+        padding: 1rem;
+    }
+}

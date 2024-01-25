@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p,
+a,
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --color1: #00f921;
+    --color2: #000279;
+    --color3: #890000;
+}
+
+/* navigation */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    background: linear-gradient(90deg, #adffd7e2 ,  #fff2b1d3);
+    padding: 0rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* navigation:logo */
+
+.nav .logo{
+    color: var(--color3);
+    font-size: 1.8rem;
+}
+
+/* navigation:navlist */
+
+.nav ul{
+    display: flex;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+
+.nav ul li a{
+    text-decoration: none;
+    padding: 3px ;
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.nav ul li a::after{
+    content: "";
+    background: var(--color3);
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s all ease-in-out;
+}
+
+.nav ul li a:hover{
+    color: var(--color3);
+    font-size: 1.1rem;
+}
+
+.nav ul li a:hover::after{
+    height: 4px;
+    width: 100%;
+}
+
+.nav .hamburger{
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    display: none;
+}
+
+.nav .hamburger .lines{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+}
+
